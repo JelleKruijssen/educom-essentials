@@ -1,0 +1,154 @@
+Markdown
+Voorbeeld github repositories. 
+Hierin kan vooral tekst gebruikt worden en aan deze tekst kunnen kleine aanpassingen gedaan worden zoals grote van het lettertype.
+ 
+En het grootste doel van deze format is om de taal leesbaar en duidelijk te houden en is daarom vooral te vinden in CMS-systemen en online fora een voorbeeld hiervan zijn de resositories die gebruikt worden op github. 
+
+JSON
+Is gebouwd op basis van de collectie van verschillende namen/ paren van waardes en daarnaast op een geordende lijst van waardes.
+{"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}
+Deze code is bedoeld om een file te openen en te sluiten, hierbij is de code in een vorm van een tabel waarbij de waarde en de actie die erbij hoord gepaard staan.
+
+{"widget": {
+    "debug": "on",
+    "window": {
+        "title": "Sample Konfabulator Widget",
+        "name": "main_window",
+        "width": 500,
+        "height": 500
+    },
+    "image": { 
+        "src": "Images/Sun.png",
+        "name": "sun1",
+        "hOffset": 250,
+        "vOffset": 250,
+        "alignment": "center"
+    },
+    "text": {
+        "data": "Click Here",
+        "size": 36,
+        "style": "bold",
+        "name": "text1",
+        "hOffset": 250,
+        "vOffset": 100,
+        "alignment": "center",
+        "onMouseUp": "sun1.opacity = (sun1.opacity / 100) * 90;"
+    }
+}}    
+Beide voorbeelden zijn de functies gekoppeld aan de acties die gedaan moeten worden of aan de eventueel condities. Daarnaast word er per blok een start en einde gemaakt met {}.
+
+XML
+Deze taal word vooral gebruikt voor het verspreiden van data over het internet. Het is een taal dat zowel leesbaar is voor mensen als voor computers. 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+
+Korte code om een notitie te versturen.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<breakfast_menu>
+<food>
+    <name>Belgian Waffles</name>
+    <price>$5.95</price>
+    <description>
+   Two of our famous Belgian Waffles with plenty of real maple syrup
+   </description>
+    <calories>650</calories>
+</food>
+<food>
+    <name>Strawberry Belgian Waffles</name>
+    <price>$7.95</price>
+    <description>
+    Light Belgian waffles covered with strawberries and whipped cream
+    </description>
+    <calories>900</calories>
+</food>
+<food>
+    <name>Berry-Berry Belgian Waffles</name>
+    <price>$8.95</price>
+    <description>
+    Belgian waffles covered with assorted fresh berries and whipped cream
+    </description>
+    <calories>900</calories>
+</food>
+<food>
+    <name>French Toast</name>
+    <price>$4.50</price>
+    <description>
+    Thick slices made from our homemade sourdough bread
+    </description>
+    <calories>600</calories>
+</food>
+<food>
+    <name>Homestyle Breakfast</name>
+    <price>$6.95</price>
+    <description>
+    Two eggs, bacon or sausage, toast, and our ever-popular hash browns
+    </description>
+    <calories>950</calories> 
+</food>
+</breakfast_menu>
+
+De 2e code is langer, maar bij beide voorbeelden is de bedoeling dat er informatie verspreid word van de bron naar de ontvanger. Bij beide is er een header en een body die ontstaat tijdens de code. waarbij de header de niet zichtbare date bevat en de body de zichtbare data. 
+
+SVG
+Dit is een subset van XML en hierdoor zijn SVG’s makkelijk te programmeren binnen een programmeertaal. Deze afbeeldingen kunnen worden veranderd in schaal zonder dat ze hun kwaliteit verliezen.
+
+<html>
+<body>
+
+<h1>My first SVG</h1>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+</body>
+</html>
+
+In dit voorbeeld de code creeërt een cricle die geel van kleur is met behulp van de XML (HTML) code en hierdoor is het makkelijk te implementeren binnen de XML code en subclasses hiervan.
+
+YAML
+Dit is een taal die leesbaar is voor mensen en data in een serie plaatst.
+
+---
+Store:
+  Bakery:
+    - ‘Sourdough loaf’
+    - ‘Bagels’
+  Cheesemonger:
+    - ‘Blue cheese’
+    - ‘Feta’
+
+Dit voorbeeld is een lijst van winkels
+ 
+defaults: &defaults
+   adapter:  postgres
+   host:     localhost
+
+development:
+   database: myapp_development
+   <<: *defaults
+
+test:
+   database: myapp_test
+   <<: *defaults
+
+The code comparted 
+
+Beide codes hebben een overeenkomst met dat de lijsten die gemaakt worden gewoon achter elkaar staan. Hierbij is het makkelijk om data te overhandigen of te verwerken wanneer dit nodig zou zijn.
